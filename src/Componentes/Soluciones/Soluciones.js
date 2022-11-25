@@ -33,7 +33,7 @@ const Soluciones = () => {
                 </Card.Footer>
             </Card>
             <Card>
-                <Card.Img variant="top" src="holder.js/100px160" />
+                <Card.Img variant="top" src={fondobalanza} />
                 <Card.Body>
                     <Card.Title>Card title</Card.Title>
                     <Card.Text>

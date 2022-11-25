@@ -1,9 +1,11 @@
 import React from "react";
 import './Home.css'
 import ImagenHome from '../Image/home.png';
+import Container from 'react-bootstrap/Container';
 
 const Home = () => {
     return (
+        <Container fluid="md">
         <div className="home">
             <div className="titulo">
                 <h1 className="titulo_1">
@@ -22,8 +24,8 @@ const Home = () => {
                 </h2>
                 
 
-                            <div class="header-singup wow fadeInUp">
-                                    <a class="main-btn main-btn" href="#contact">Cont&aacute;ctenos...</a>
+                            <div className="buttonDefault">
+                                    <a className="buttonContact" href="#contact">Cont&aacute;ctenos...</a>
                             </div>
             </div>
             <div className="imagenHome">
@@ -32,6 +34,7 @@ const Home = () => {
                     </div>
             </div>
         </div>
+        </Container>
     );
 };
 

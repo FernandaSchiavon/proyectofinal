@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Logo from '../Image/logo-infolab.png';
-import { Outlet, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Ejemplo = () => {
     
