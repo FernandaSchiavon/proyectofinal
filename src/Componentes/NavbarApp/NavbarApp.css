@@ -1,0 +1,16 @@
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbarBg{
+    background-image: url("../Image/fondo.jpg");
+}
+
+.navBarpage{
+    /*background-color: red;*/
+}
+.navBarhome{
+    /*background-color: green;*/
+}

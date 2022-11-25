@@ -1,0 +1,77 @@
+
+.nosotros{
+    background-image: url(/src/Componentes/Image/fondo.jpg);
+    height: 800px;
+    /*position: relative;*/
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: 2rem;
+    padding-bottom: 10rem;
+    align-items: center;
+    text-align: center;
+    /*display: flex;*/
+   
+}
+
+
+
+
+/*
+.titulo{
+    margin-left: 1rem;
+    /*width: 50%;*/
+/*
+.titulo_1{
+    display: block;
+    font-weight: 700;
+    align-content: center;
+    text-align: justify;
+}
+
+.titulo_2{
+    display: block;
+    font-weight: 200;
+    align-content: center;
+    text-align: left;
+}
+
+
+.tituloNosotros{
+    width:100%;
+    background-color: red;
+}
+
+.textoTituloNosotros{
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    padding-left: 1rem;
+    color: rgb(65, 63, 63); 
+}
+
+
+.textRed{
+    color: red; 
+}
+
+.textSubtitle{
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding-left: 1rem;
+}
+
+
+.textNormal{
+    font-size: 30px;
+    padding-left: 1rem;
+}
+
+
+.imagenNosotros{
+    width: 30%;
+}
+
+*/

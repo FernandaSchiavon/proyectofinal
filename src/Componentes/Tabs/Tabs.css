@@ -1,0 +1,55 @@
+.tabs {
+    list-style: none;
+    padding: 0rem;
+    margin: 0rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .tabs > li {
+    padding: 0.5em 1em;
+    margin: 0 1em;
+  }
+
+  .linkTab {
+    color:rgb(85, 56, 56);
+    text-decoration: none;
+  }
+  .current {
+    font-weight: bold;
+    border-bottom: 0;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    position: relative;
+    top: 2px;  
+
+  }
+  
+  .content {
+    padding: 1rem 2em;
+    color:rgb(41, 41, 56)
+  }
+
+  .title{
+    color:green;
+    margin-top: 1rem;
+  }
+
+.textTab{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color:rgb(46, 46, 48);
+    margin-left: 3rem;
+    margin-right: 3rem;
+    position: relative;
+}
+
+.text{
+    text-align: left;
+}
+
+.imagen{
+    width: 100%;
+    height: 100%;
+}
