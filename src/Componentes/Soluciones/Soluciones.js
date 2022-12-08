@@ -1,11 +1,9 @@
 import React from "react";
 import './Soluciones.css';
 import fondoventas from '../Image/fondoventas2022.jpg';
-import fondobalanza from '../Image/fondobalanza2022.jpg';
 import fondointegrador from '../Image/fondointegrador2022.jpg';
 import fondopyme from '../Image/fondopyme2022.jpg';
 import fondocompras from '../Image/fondocompras2022.jpg';
-import fondoserviciotecnico from '../Image/fondoserviciotecnico2022.jpg';
 import fondofinanzas from '../Image/fondofinanzas2022.jpg';
 import fondostock from '../Image/fondostock2022.jpg';
 
