@@ -1,54 +1,84 @@
-import React from "react";
-import { useForm } from "react-hook-form"
+import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
+import  "./Contacto.css" ;
 
-const Contacto = () => {
+function Contacto() {
+  const [state, handleSubmit] = useForm("xvoyjdpy");
+    
 
-const { register, formState:{ errors}, watch , handleSubmit } = useForm("");   
+  
+  if (state.succeeded) {
+      return <p>Gracias por comunicarse con Infolab Soluciones!</p>;
+  }
 
-const onSubmit = (data) => {
-    console.log(data);
+  return (
+    
+    <>
+                <div className="row">
+                <div className="col-lg-2">
+                </div>
+                <div className="col-lg-8">
+                    <div >
+                        <h1 className="textTitleContacto textDarkContacto">Contacto...</h1>
+                        <h4 className="title">Nos mantenemos <span>comunicados.</span></h4>
+                    </div>
+                </div>
+                <div className="col-lg-2">
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-lg-2">
+                </div>
+                <div className="col-lg-8"> 
+                    Envienos su mensaje y le responderemos a la brevedad... Gracias!
+                </div>
+                <div className="col-lg-2">
+                </div>
+            </div>
+
+ <form className="row g-4" onSubmit={handleSubmit}>
+    <div className="col-md-2">
+    </div>
+    <div className="col-4">
+    <label for="inputNombre" className="form-label">Nombre</label>
+    <input type="text" className="form-control" id="inputNombre" placeholder="Ingrese su nombre..."/>
+      </div>
+    <div className="col-md-4">
+        <label for="email" className="form-label" htmlFor="email">Email</label>
+        <input type="email" className="form-control" id="email" name="email" placeholder="Ingrese su direción de Email..."/>
+        <ValidationError 
+                                    prefix="Email" 
+                                    field="email"
+                                    errors={state.errors}
+                                />
+    </div>
+    <div className="col-md-2">
+    </div>
+    <div className="col-md-2">
+    </div>
+    <div className="col-8">
+    <label for="message" className="form-label">Mensaje</label>
+    {/*<input type="text" className="form-control" id="message" name="message" placeholder="Ingrese su domicilio..."/>*/}
+    <textarea className="form-control"
+                                    id="message"
+                                    name="message"
+                                    placeholder="Ingrese su mensaje..."
+                                />
+                                <ValidationError 
+                                    prefix="Message" 
+                                    field="message"
+                                    errors={state.errors}
+                                />
+
+  </div>
+  
+  <div className="col-12">
+    <button type="submit" className="btn btn-primary" disabled={state.submitting}>Enviar Mensaje</button>
+  </div>
+</form>
+    
+</>
+  );
 }
-    return(
-        <div>
-            <h1>Contacto</h1>
-            <div> Nombre : { watch('nombre')}</div>
-            <form onSubmit={handleSubmit(onSubmit)}>
-                <div>
-                    <label>Nombre</label>
-                    <input type="text" {...register('nombre', {
-                        required:true,
-                        maxLength:10
-                    })}/>
-                    {errors.nombre?.type === 'required' && <p>El campo nombre es obligatorio</p>}
 
-                    {errors.nombre?.type === 'maxLength' && <p>El campo nombre debe tener menos de 10 caracteres</p>}
-                </div>
-                <div>
-                    <label>Apellido</label>
-                    <input type="text" {...register('apellido', {
-                        required:true
-                    })}/>
-                </div>
-                <div>
-                    <label>Email</label>
-                    <input type="text" {...register('email', {
-                        pattern: /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/ 
-                    })}/>
-                    {errors.email?.type === 'pattern' && <p>El formato es incorrecto</p>}
-                </div>
-                <div>
-                    <label>Gusto de helado</label>
-                    <select {...register('sabor')}>
-                        <option value="ch">Chocolate </option>
-                        <option value="dl">dulce </option>
-                    </select>
-                </div>
-                <input type="submit" value="Enviar"/>
-
-            </form>
-        </div>
-    );
-};
-
-export default Contacto
-
+export default Contacto;

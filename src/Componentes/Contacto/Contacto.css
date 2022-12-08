@@ -1,0 +1,14 @@
+.labelCampo{
+    padding: 1rem 2rem 1rem 1rem;
+}
+
+.textTitleContacto{
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    padding-left: 2rem;
+}
+
+.textDarkContacto{
+    color: #000; 
+}

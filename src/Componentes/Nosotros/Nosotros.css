@@ -15,63 +15,43 @@
    
 }
 
-
-
-
-/*
-.titulo{
-    margin-left: 1rem;
-    /*width: 50%;*/
-/*
-.titulo_1{
-    display: block;
+.textTitleNosotros{
+    font-size: 3rem;
     font-weight: 700;
-    align-content: center;
-    text-align: justify;
+    letter-spacing: 0.3rem;
+    padding-left: 2rem;
+
 }
 
-.titulo_2{
-    display: block;
-    font-weight: 200;
-    align-content: center;
-    text-align: left;
-}
-
-
-.tituloNosotros{
-    width:100%;
-    background-color: red;
-}
-
-.textoTituloNosotros{
-    font-size: 30px;
-    font-weight: 300;
-    letter-spacing: 2px;
-    padding-left: 1rem;
-    color: rgb(65, 63, 63); 
-}
-
-
-.textRed{
-    color: red; 
-}
-
-.textSubtitle{
-    font-size: 60px;
+.textSubtitleNosotros{
+    font-size: 2rem;
     font-weight: 600;
-    letter-spacing: 2px;
-    padding-left: 1rem;
+    /*letter-spacing: 0.2rem;*/
+    padding-left: 2rem;
 }
 
-
-.textNormal{
-    font-size: 30px;
-    padding-left: 1rem;
+.columnImageNosotros{
+    width: 100%;
+    align-items: center;
 }
 
-
-.imagenNosotros{
-    width: 30%;
+.columnNosotros{
+    align-items: center;
+    vertical-align: middle;
 }
 
-*/
+.imageNosotros{
+    width: 30rem;
+}
+
+.textNosotros{
+    font-size: 1rem;
+    font-weight: 400;
+    /*letter-spacing: 0.2rem;*/
+    padding-top: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-inline: 1rem;
+    padding-bottom: 1rem;
+
+}

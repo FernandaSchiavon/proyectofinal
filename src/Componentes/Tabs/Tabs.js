@@ -5,7 +5,7 @@ import  "./Tabs.css" ;
 import { slugify } from "../Utils/Slugify";
 
 /* recibo como parametro los div y el tab con el que se inicia, el que muestro */
-const Tabs = ({ children, initialTab }) => {
+const Tabs = ({ children, initialTab, iconTab, tituloTab }) => {
     /* siempre muestra el primer tab*/
   const [activeTab, setActiveTab] = useState(children[0].props.label);
   
@@ -27,13 +27,15 @@ const Tabs = ({ children, initialTab }) => {
       <ul className="tabs">
         {children.map((tab) => {
           const label = tab.props.label;
+          const icono = tab.props.iconTab;
           return (
             <li
               className={slugify(label) == activeTab ? "current" : ""}
               key={label}
             >
               <a className="linkTab" href="#" onClick={(e) => handleClick(e, label)}>
-                {label}
+              <i class={`${icono}`}></i>
+              <span className="tituloTab">{tab.props.tituloTab}</span>
               </a>
             </li>
           );

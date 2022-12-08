@@ -25,7 +25,6 @@ const NavbarApp = () => {
                     <Nav.Link as={Link} to="/servicios" className="text-dark">Servicios</Nav.Link>
                     <Nav.Link as={Link} to="/soporte" className="text-primary">Ayuda y Soporte</Nav.Link>                    
                     <Nav.Link as={Link} to="/contacto" className="text-success">Contacto</Nav.Link>
-                    <Nav.Link as={Link} to="/Ejemplo">Ejemplo</Nav.Link>
                   </Nav>
                 </Navbar.Collapse>
               </Container>

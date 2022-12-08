@@ -9,7 +9,7 @@ import Soporte from './Componentes/Soporte/Soporte';
 import Nosotros from './Componentes/Nosotros/Nosotros';
 import Home from './Componentes/Home/Home';
 import Footer from './Componentes/Footer/Footer';
-import Ejemplo from './Componentes/Ejemplo/Ejemplo';
+
 
 
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
@@ -27,7 +27,6 @@ function App() {
             <Route path='Servicios' element={ <Servicios />} />
             <Route path='Soporte' element={ <Soporte />} />
             <Route path='Contacto' element={ <Contacto />} />
-            <Route path='Ejemplo' element={ <Ejemplo />} />
             <Route path='*' element={ <Navigate replace to="/"/>} />
           </Route>
         </Routes>

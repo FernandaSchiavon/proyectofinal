@@ -1,3 +1,13 @@
-.piepagina{
-    padding: 10 rem;
+.pageFooter{
+    background-image: url(/src/Componentes/Image/fondo.jpg);
+    padding-top: 2rem;
+    /*padding: 1rem 10rem 10rem 10rem;*/
+}
+
+.listSocial{
+    list-style: none;
+}
+
+.imageFooter{
+    width: 2rem;
 }

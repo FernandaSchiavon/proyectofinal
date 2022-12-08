@@ -14,19 +14,7 @@
     text-align: center;
 }
 
-.titulo{
-    margin-left: 10rem;
-    width: 50%;
-}
-
-.titulo_1{
-    display: block;
-    font-weight: 700;
-    align-content: center;
-    text-align: justify;
-}
-
-.titulo_2{
+.subTitle{
     display: block;
     font-weight: 200;
     align-content: center;
@@ -36,10 +24,10 @@
 
 
 .textTitle{
-    font-size: 60px;
+    font-size: 3rem;
     font-weight: 700;
-    letter-spacing: 2px;
-    padding-left: 1rem;
+    letter-spacing: 0.5rem;
+    padding-left: 2rem;
 }
 
 .textDark{
@@ -51,10 +39,10 @@
 }
 
 .textSubtitle{
-    font-size: 60px;
+    font-size: 3rem;
     font-weight: 600;
-    letter-spacing: 2px;
-    padding-left: 1rem;
+    letter-spacing: 0.5rem;
+    padding-left: 2rem;
 }
 
 
@@ -67,8 +55,7 @@
     width: 50%;
 }
 
-/*
+
 .image{
-    width: 50rem;
+    width: 100%;
 }
-*/

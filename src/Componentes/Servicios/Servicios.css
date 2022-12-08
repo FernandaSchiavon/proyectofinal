@@ -5,3 +5,14 @@
     width: 570;
     height: 321;
 }
+
+.textTitleServicios{
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    padding-left: 2rem;
+}
+
+.textDarkServicios{
+    color: #000; 
+}
