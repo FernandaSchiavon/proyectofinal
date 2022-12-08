@@ -1,11 +1,11 @@
 import React from "react";
 import './Soluciones.css';
-import fondoventas from '../Image/fondoventas2022.jpg';
-import fondointegra from '../Image/fondoventas2022.jpg';
+import fondoventas from '../Image/fondoventas.jpg';
+import fondointegra from '../Image/fondoventas.jpg';
 import fondopyme from '../Image/solucionpyme.jpg';
-import fondocompras from '../Image/fondocompras2022.jpg';
-import fondofinanzas from '../Image/fondofinanzas2022.jpg';
-import fondostock from '../Image/fondostock2022.jpg';
+import fondocompras from '../Image/fondocompras.jpg';
+import fondofinanzas from '../Image/fondofinanzas.jpg';
+import fondostock from '../Image/fondostock.jpg';
 
 
 import Card from 'react-bootstrap/Card';
